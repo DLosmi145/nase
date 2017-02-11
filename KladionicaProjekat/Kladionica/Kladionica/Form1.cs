@@ -38,13 +38,33 @@ namespace Kladionica
             textBox1.Text = "" + id; */
 
             // logovanje zaposlenog
-            string ime = textBox1.Text.ToString();
+            /*string ime = textBox1.Text.ToString();
             string sifra = textBox2.Text.ToString();
 
             MySqlDAOFactory factory = new MySqlDAOFactory();
             ZaposleniDTO zaposleni = factory.getZaposleniDAO().getByImeISifra(ime, sifra);
 
-            label1.Text = zaposleni.Prezime;
+            label1.Text = zaposleni.Prezime; */
+
+            // dodavanje novog igraca u bazu
+             /*IgracDTO igrac = new IgracDTO();
+
+             igrac.Ime = "Petar";
+             igrac.Prezime = "Petrovic";
+             igrac.Sifra = "123456";
+
+             MySqlDAOFactory factory = new MySqlDAOFactory();
+             int id = factory.getIgracDAO().insert(igrac);
+             textBox1.Text = "" + id; */
+
+            // logovanje zaposlenog
+            string ime = textBox1.Text.ToString();
+            string sifra = textBox2.Text.ToString();
+
+            MySqlDAOFactory factory = new MySqlDAOFactory();
+            IgracDTO igrac = factory.getIgracDAO().getByImeISifra(ime, sifra);
+
+            label1.Text = igrac.Prezime; 
         }
     }
 }

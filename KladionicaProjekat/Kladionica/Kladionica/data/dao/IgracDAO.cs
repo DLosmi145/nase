@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kladionica.data.dto;
 
 namespace Kladionica.data.dao
 {
-    public abstract class DAOFactory
+    public interface IgracDAO
     {
-        public abstract ZaposleniDAO getZaposleniDAO();
-        public abstract IgracDAO getIgracDAO();
+        int insert(IgracDTO igrac);
+        IgracDTO getByImeISifra(string ime, string sifra);
     }
 }
