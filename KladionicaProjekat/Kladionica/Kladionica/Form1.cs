@@ -23,9 +23,8 @@ namespace Kladionica
         private void button1_Click(object sender, EventArgs e)
         {
             // dodavanje novog zaposlenog u bazu
-           /* ZaposleniDTO zaposleni = new ZaposleniDTO();
+            /*ZaposleniDTO zaposleni = new ZaposleniDTO();
 
-            zaposleni.Id = "zaposleni2";
             zaposleni.Ime = "Petar";
             zaposleni.Prezime = "Petrovic";
             zaposleni.BrojTelefona = "066123456";
@@ -38,13 +37,13 @@ namespace Kladionica
             textBox1.Text = "" + id; */
 
             // logovanje zaposlenog
-            /*string ime = textBox1.Text.ToString();
+            string ime = textBox1.Text.ToString();
             string sifra = textBox2.Text.ToString();
 
             MySqlDAOFactory factory = new MySqlDAOFactory();
             ZaposleniDTO zaposleni = factory.getZaposleniDAO().getByImeISifra(ime, sifra);
 
-            label1.Text = zaposleni.Prezime; */
+            label1.Text = zaposleni.Prezime; 
 
             // dodavanje novog igraca u bazu
              /*IgracDTO igrac = new IgracDTO();
@@ -57,14 +56,14 @@ namespace Kladionica
              int id = factory.getIgracDAO().insert(igrac);
              textBox1.Text = "" + id; */
 
-            // logovanje zaposlenog
-            string ime = textBox1.Text.ToString();
+            // logovanje igraca
+           /* string ime = textBox1.Text.ToString();
             string sifra = textBox2.Text.ToString();
 
             MySqlDAOFactory factory = new MySqlDAOFactory();
             IgracDTO igrac = factory.getIgracDAO().getByImeISifra(ime, sifra);
 
-            label1.Text = igrac.Prezime; 
+            label1.Text = igrac.Prezime; */
         }
     }
 }

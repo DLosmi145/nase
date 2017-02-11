@@ -17,5 +17,20 @@ namespace Kladionica.data.dao.mysql
         {
             return new MySqlIgracDAO();
         }
+
+        public override LigaDAO getLigaDAO()
+        {
+            return new MySqlLigaDAO();
+        }
+
+        public override SportDAO getSportDAO()
+        {
+            return new MySqlSportDAO();
+        }
+
+        public override ParDAO getParDAO()
+        {
+            return new MySqlParDAO();
+        }
     }
 }

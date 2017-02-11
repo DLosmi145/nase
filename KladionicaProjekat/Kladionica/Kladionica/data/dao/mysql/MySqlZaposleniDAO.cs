@@ -10,7 +10,7 @@ namespace Kladionica.data.dao.mysql
 {
     class MySqlZaposleniDAO : ZaposleniDAO
     {
-        private string insertQuerry = "INSERT INTO `kladionica`.`zaposleni` (`ID`, `Ime`, `Prezime`, `BrojTelefona`, `Adresa`, `Sifra`, `NivoPristupa`) VALUES (?id, ?ime, ?prezime, ?brojTelefona, ?adresa, ?sifra, ?nivoPristupa);";
+        private string insertQuerry = "INSERT INTO `kladionica`.`zaposleni` (`Ime`, `Prezime`, `BrojTelefona`, `Adresa`, `Sifra`, `NivoPristupa`) VALUES (?ime, ?prezime, ?brojTelefona, ?adresa, ?sifra, ?nivoPristupa);";
         private string getByImeISifraQuery = "SELECT * from `kladionica`.`zaposleni` where ime=? and sifra=?;";
 
 
@@ -21,7 +21,6 @@ namespace Kladionica.data.dao.mysql
             MySqlConnection connection = ConnectionPool.checkOutConnection();
             MySqlCommand command = connection.CreateCommand();
             command.CommandText = insertQuerry;
-            command.Parameters.AddWithValue("id", zaposleni.Id);
             command.Parameters.AddWithValue("ime", zaposleni.Ime);
             command.Parameters.AddWithValue("prezime", zaposleni.Prezime);
             command.Parameters.AddWithValue("brojTelefona", zaposleni.BrojTelefona);
@@ -62,7 +61,7 @@ namespace Kladionica.data.dao.mysql
         {
             ZaposleniDTO zaposleni = new ZaposleniDTO();
 
-            zaposleni.Id = reader["ID"].ToString();
+            zaposleni.Id = reader.GetInt32("IdZaposleni");
             zaposleni.Ime = reader["Ime"].ToString();
             zaposleni.Prezime = reader["Prezime"].ToString();
             zaposleni.BrojTelefona = reader["BrojTelefona"].ToString();

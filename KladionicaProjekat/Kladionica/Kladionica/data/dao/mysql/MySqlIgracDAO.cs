@@ -55,7 +55,7 @@ namespace Kladionica.data.dao.mysql
         public static IgracDTO readerToIgracDTO(MySqlDataReader reader)
         {
             IgracDTO igrac = new IgracDTO();
-            igrac.Id = reader.GetInt32("Id");
+            igrac.Id = reader.GetInt32("IdIgrac");
             igrac.Ime = reader["Ime"].ToString();
             igrac.Prezime = reader["Prezime"].ToString();
             igrac.Sifra = reader["Sifra"].ToString();

@@ -46,14 +46,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="data\dao\DAOFactory.cs" />
+    <Compile Include="data\dao\DogadjajDAO.cs" />
     <Compile Include="data\dao\IgracDAO.cs" />
+    <Compile Include="data\dao\LigaDAO.cs" />
     <Compile Include="data\dao\mysql\ConnectionPool.cs" />
     <Compile Include="data\dao\mysql\MySqlDAOFactory.cs" />
     <Compile Include="data\dao\mysql\MySqlIgracDAO.cs" />
+    <Compile Include="data\dao\mysql\MySqlLigaDAO.cs" />
+    <Compile Include="data\dao\mysql\MySqlParDAO.cs" />
+    <Compile Include="data\dao\mysql\MySqlSportDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlZaposleniDAO.cs" />
+    <Compile Include="data\dao\ParDAO.cs" />
+    <Compile Include="data\dao\SportDAO.cs" />
     <Compile Include="data\dao\ZaposleniDAO.cs" />
+    <Compile Include="data\dto\DogadjajDTO.cs" />
     <Compile Include="data\dto\IgracDTO.cs" />
-    <Compile Include="data\dto\SifraUplatnogSistema.cs" />
+    <Compile Include="data\dto\LigaDTO.cs" />
+    <Compile Include="data\dto\ParDTO.cs" />
+    <Compile Include="data\dto\SifraUplatnogSistemaDTO.cs" />
+    <Compile Include="data\dto\SportDTO.cs" />
     <Compile Include="data\dto\ZaposleniDTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

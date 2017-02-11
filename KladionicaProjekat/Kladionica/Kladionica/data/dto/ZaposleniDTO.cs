@@ -8,13 +8,14 @@ namespace Kladionica.data.dto
 {
     public class ZaposleniDTO
     {
-        private string id;
+        private int id;
 
-        public string Id
+        public int Id
         {
             get { return id; }
             set { id = value; }
         }
+
 
         private string ime;
 
