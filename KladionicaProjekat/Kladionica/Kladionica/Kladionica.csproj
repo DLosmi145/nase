@@ -56,7 +56,9 @@
     <Compile Include="data\dao\mysql\MySqlLigaDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlParDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlSportDAO.cs" />
+    <Compile Include="data\dao\mysql\MySqlTiketDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlZaposleniDAO.cs" />
+    <Compile Include="data\dao\TiketDAO.cs" />
     <Compile Include="data\dao\ParDAO.cs" />
     <Compile Include="data\dao\SportDAO.cs" />
     <Compile Include="data\dao\ZaposleniDAO.cs" />

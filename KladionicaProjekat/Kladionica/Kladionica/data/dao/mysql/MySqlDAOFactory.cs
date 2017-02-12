@@ -37,5 +37,10 @@ namespace Kladionica.data.dao.mysql
         {
             return new MySqlDogadjajDAO();
         }
+
+        public override TiketDAO getTiketDAO()
+        {
+            return new MySqlTiketDAO();
+        }
     }
 }

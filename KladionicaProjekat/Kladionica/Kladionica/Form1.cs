@@ -65,11 +65,20 @@ namespace Kladionica
 
             label1.Text = igrac.Prezime; */
 
-            //svi validni dogadjaji
-            List<DogadjajDTO> dogadjaji = new List<DogadjajDTO>(0);
+            // umetanje dogadjaja
+            /*DogadjajDTO dogadjaj = new DogadjajDTO();
+            dogadjaj.VrijemeOdrzavanja = new DateTime(2017, 3, 25, 16, 0, 0);
+            dogadjaj.Par = new ParDTO();
+            dogadjaj.Par.Id = 1;
+            MySqlDAOFactory factory = new MySqlDAOFactory();
+            factory.getDogadjajDAO().insert(dogadjaj);
+            label1.Text = dogadjaj.VrijemeOdrzavanja.ToString(); */
+
+            // svi validni dogadjaji
+            /*List<DogadjajDTO> dogadjaji = new List<DogadjajDTO>(0);
             MySqlDAOFactory factory = new MySqlDAOFactory();
             dogadjaji = factory.getDogadjajDAO().getAllValidEvents();
-            label1.Text = dogadjaji.ElementAt(0).Par.Naziv;
+            label1.Text = dogadjaji.ElementAt(0).Par.Naziv; */
         }
     }
 }

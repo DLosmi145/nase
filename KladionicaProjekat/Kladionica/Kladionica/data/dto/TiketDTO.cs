@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kladionica.data.dto
 {
-    class TiketDTO
+    public class TiketDTO
     {
         private int id;
 
