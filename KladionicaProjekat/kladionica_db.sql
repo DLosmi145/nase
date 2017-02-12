@@ -96,14 +96,14 @@ CREATE TABLE IF NOT EXISTS `Kladionica`.`Par` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `Kladionica`.`Dogadjaj`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Kladionica`.`Dogadjaj` (
   `IDDogadjaj` INT NOT NULL AUTO_INCREMENT,
-  `Datum` DATE NULL,
-  `VrijemeOdrzavanja` TIME NULL,
+  #`Datum` DATE NULL,
+ # `VrijemeOdrzavanja` TIME NULL,
+   VrijemeOdrzavanja DATETIME,
   `Par_ID` INT NOT NULL,
   PRIMARY KEY (`IDDogadjaj`),
   INDEX `fk_Dogadjaj_Par1_idx` (`Par_ID` ASC),
@@ -119,8 +119,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Kladionica`.`Tiket` (
   `IDTiket` CHAR(40) NOT NULL,
-  `DatumUplate` DATE NULL,
-  `VrijemeUplate` TIME NULL,
+  `VrijemeUplate` DATETIME NULL,
   `KontrolniBrojTiketa` VARCHAR(9) NULL,
   `IznosUplate` FLOAT(10) NULL,
   `Sistem` INT(10) NULL,

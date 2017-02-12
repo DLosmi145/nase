@@ -32,5 +32,10 @@ namespace Kladionica.data.dao.mysql
         {
             return new MySqlParDAO();
         }
+
+        public override DogadjajDAO getDogadjajDAO()
+        {
+            return new MySqlDogadjajDAO();
+        }
     }
 }

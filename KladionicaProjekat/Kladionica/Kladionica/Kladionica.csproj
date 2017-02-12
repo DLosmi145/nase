@@ -51,6 +51,7 @@
     <Compile Include="data\dao\LigaDAO.cs" />
     <Compile Include="data\dao\mysql\ConnectionPool.cs" />
     <Compile Include="data\dao\mysql\MySqlDAOFactory.cs" />
+    <Compile Include="data\dao\mysql\MySqlDogadjajDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlIgracDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlLigaDAO.cs" />
     <Compile Include="data\dao\mysql\MySqlParDAO.cs" />
@@ -63,8 +64,9 @@
     <Compile Include="data\dto\IgracDTO.cs" />
     <Compile Include="data\dto\LigaDTO.cs" />
     <Compile Include="data\dto\ParDTO.cs" />
-    <Compile Include="data\dto\SifraUplatnogSistemaDTO.cs" />
+    <Compile Include="data\dto\SifraUplatnogMjestaDTO.cs" />
     <Compile Include="data\dto\SportDTO.cs" />
+    <Compile Include="data\dto\TiketDTO.cs" />
     <Compile Include="data\dto\ZaposleniDTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

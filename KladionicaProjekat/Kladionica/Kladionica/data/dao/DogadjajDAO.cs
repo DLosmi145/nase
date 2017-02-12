@@ -7,8 +7,10 @@ using Kladionica.data.dto;
 
 namespace Kladionica.data.dao
 {
-    interface DogadjajDAO
+    public interface DogadjajDAO
     {
         int insert(DogadjajDTO dogadjaj);
+        List<DogadjajDTO> getAll();
+        List<DogadjajDTO> getAllValidEvents();
     }
 }

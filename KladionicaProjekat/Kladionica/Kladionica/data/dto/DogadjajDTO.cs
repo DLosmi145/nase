@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kladionica.data.dto
 {
-    class DogadjajDTO
+    public class DogadjajDTO
     {
         private int id;
 
