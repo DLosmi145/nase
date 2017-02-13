@@ -42,5 +42,15 @@ namespace Kladionica.data.dao.mysql
         {
             return new MySqlTiketDAO();
         }
+
+        public override TipIgreDAO getTipIgreDAO()
+        {
+            return new MySqlTipIgreDAO();
+        }
+
+        public override DogadjajTiketDAO getDogadjajTiketDAO()
+        {
+            return new MySqlDogadjajTiketDAO();
+        }
     }
 }

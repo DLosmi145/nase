@@ -64,9 +64,6 @@ namespace Kladionica.data.dao.mysql
             {
                 DogadjajDTO dogadjaj = new DogadjajDTO();
                 dogadjaj = readerToDogadjajDTO(reader);
-                dogadjaj.Par = MySqlParDAO.readerToParDTO(reader);
-                dogadjaj.Par.Sport = MySqlSportDAO.readerToSportDTO(reader);
-                dogadjaj.Par.Sport.Liga = MySqlLigaDAO.readerToLigaDTO(reader);
                 dogadjaji.Add(dogadjaj);
             }
             reader.Close();
@@ -79,6 +76,9 @@ namespace Kladionica.data.dao.mysql
             DogadjajDTO dogadjaj = new DogadjajDTO();
             dogadjaj.Id = reader.GetInt32("IdDogadjaj");
             dogadjaj.VrijemeOdrzavanja = reader.GetDateTime("vrijemeOdrzavanja");
+            dogadjaj.Par = MySqlParDAO.readerToParDTO(reader);
+            dogadjaj.Par.Sport = MySqlSportDAO.readerToSportDTO(reader);
+            dogadjaj.Par.Sport.Liga = MySqlLigaDAO.readerToLigaDTO(reader);
             return dogadjaj;
         }
     }

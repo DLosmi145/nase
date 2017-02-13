@@ -15,5 +15,7 @@ namespace Kladionica.data.dao
         public abstract ParDAO getParDAO();
         public abstract DogadjajDAO getDogadjajDAO();
         public abstract TiketDAO getTiketDAO();
+        public abstract TipIgreDAO getTipIgreDAO();
+        public abstract DogadjajTiketDAO getDogadjajTiketDAO();
     }
 }

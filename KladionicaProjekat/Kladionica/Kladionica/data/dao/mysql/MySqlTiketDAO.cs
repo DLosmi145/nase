@@ -63,7 +63,7 @@ namespace Kladionica.data.dao.mysql
             tiket.Id = reader.GetInt32("IdTiket");
             tiket.KontrolniBrojTiketa = reader["KontrolniBrojTiketa"].ToString();
             tiket.IznosUplate = reader.GetFloat("IznosUplate");
-            tiket.Sistem = reader.GetInt32("Tiket");
+            tiket.Sistem = reader.GetInt32("Sistem");
 
             return tiket;
         }
